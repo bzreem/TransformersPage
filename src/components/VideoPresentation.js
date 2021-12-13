@@ -13,8 +13,19 @@ const VideoPresentation = () => {
       const $videoTwo = document.getElementById("video-two-presentation");
       $videoOne.muted = true;
       $videoTwo.muted = true;
-      $videoOne.play();
-      $videoTwo.play();
+      let videoOne = $videoOne.play();
+      let videoTwo = $videoTwo.play();
+
+      Promise.all([videoOne, videoTwo])
+        .then(() => {
+          if (videoOne && videoTwo !== undefined) {
+            $videoOne.play();
+            $videoTwo.play();
+          }
+        })
+        .catch((e) => {
+          console.log(e);
+        });
 
       // IntersectionObserverHelper("#video-one-presentation")
       // IntersectionObserverHelper("#video-two-presentation")
