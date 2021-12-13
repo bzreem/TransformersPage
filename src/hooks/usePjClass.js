@@ -12,7 +12,7 @@ const usePjClass = (initialPj) => {
     $img.forEach((el, index) => {
       el.classList.remove("img-active");
       if (matchMedia("(min-width: 1024px)").matches) {
-        $video[index].classList.remove("video-active-class");
+        // $video[index].classList.remove("video-active-class");
         // $video[index].pause();
       }
     });
@@ -30,8 +30,21 @@ const usePjClass = (initialPj) => {
     $img[e.target.dataset.number].classList.add("img-active");
 
     if (matchMedia("(min-width:1024px)").matches) {
-      $video[e.target.dataset.number].classList.add("video-active-class");
-      $video[e.target.dataset.number].play();
+      let videoPlay = $video[e.target.dataset.number].play();
+      if (videoPlay !== undefined) {
+        videoPlay
+          .then(() => {
+            $video.forEach((el) => {
+              el.classList.remove("video-active-class");
+              el.pause();
+            });
+            $video[e.target.dataset.number].classList.add("video-active-class");
+            $video[e.target.dataset.number].play();
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
     }
 
     setPj(pjObj);

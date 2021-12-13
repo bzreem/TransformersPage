@@ -24,16 +24,40 @@ const MapsBg = (element) => {
     $span[index].classList.remove("span-active-maps");
     $figure[index].classList.remove("active-scale");
     $article[index].classList.remove("active-information-maps");
-    $video[index].classList.remove("active-video-maps");
-    // $video[index].load()
+    // $video[index].classList.remove("active-video-maps");
+    // $video[index].style.display = "none";
   });
 
   $img[element].classList.add("img-active-bg-maps");
   $span[element].classList.add("span-active-maps");
   $figure[element].classList.add("active-scale");
   $article[element].classList.add("active-information-maps");
-  $video[element].classList.add("active-video-maps");
-  $video[element].play()
+  // $video.forEach((el) => {
+  //   el.classList.remove("active-video-maps");
+  //   if (videoPlay !== undefined) {
+  //     el.pause();
+  //   }else{
+  //     console.log("hola")
+  //   }
+  // });
+
+  let videoPlay = $video[element].play();
+  if (videoPlay !== undefined) {
+    videoPlay
+      .then(() => {
+        $video.forEach((el) => {
+          el.classList.remove("active-video-maps");
+          el.pause()
+        });
+        $video[element].classList.add("active-video-maps");
+        $video[element].play()
+        
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }
+
   // IntersectionObserverHelper($video[element])
   // console.log($video[element])
 
