@@ -25,7 +25,7 @@ const MapsBg = (element) => {
     $figure[index].classList.remove("active-scale");
     $article[index].classList.remove("active-information-maps");
     $video[index].classList.remove("active-video-maps");
-    $video[index].load()
+    // $video[index].load()
   });
 
   $img[element].classList.add("img-active-bg-maps");
