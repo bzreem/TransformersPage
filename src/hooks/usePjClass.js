@@ -13,7 +13,7 @@ const usePjClass = (initialPj) => {
       el.classList.remove("img-active");
       if (matchMedia("(min-width: 1024px)").matches) {
         $video[index].classList.remove("video-active-class");
-        $video[index].pause();
+        $video[index].load();
       }
     });
 

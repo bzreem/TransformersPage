@@ -57,13 +57,15 @@ const MapsDesktop = ({ MapsBg }) => {
                 <div className="div-container-figcaption">
                   <figure className="select-maps-figure-scale active-scale">
                     <img
+                    draggable= "true"
                       src={prueba1}
                       alt=""
                       onClick={() => {
                         MapsBg(0);
                       }}
-                      onDrag={() => {
-                        MapsBg(0);
+                      onDragCapture={(e) => {
+                        // MapsBg(0);
+                        console.log(e)
                       }}
                     />
                   </figure>
