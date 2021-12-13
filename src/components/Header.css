@@ -1,0 +1,67 @@
+.header-styles {
+  background-color: black;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav a figure {
+  width: 10%;
+}
+
+.container-img {
+  width: 9%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+nav a img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    padding: 0.6rem 0;
+  }
+
+  nav a {
+    font-size: 1.13rem;
+  }
+
+  .container-img {
+    width: 8%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container-img {
+    width: 7%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container-img {
+    width: 4%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container-img {
+    width: 3%;
+  }
+}

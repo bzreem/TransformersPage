@@ -1,0 +1,154 @@
+.section-video-footer {
+  /* margin-top: 2rem; */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-video-footer figure {
+  width: 100%;
+  height: 100%;
+}
+
+.section-video-footer figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.div-position-absolute-btn-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.div-position-absolute-btn-video button {
+  display: block;
+  width: 250px;
+  font-size: 0.79rem;
+  border: none;
+  background-color: rgb(11, 198, 227);
+  color: black;
+  padding: 1.5rem 0;
+  letter-spacing: 0.16rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.transformers-transfer {
+  background-color: rgb(6, 28, 37);
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.transformers-transfer .article-container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.transformers-transfer .article-container-flex .container-title-h3 {
+  width: 90%;
+  margin: auto;
+}
+
+.transformers-transfer .article-container-flex h3 {
+  font-style: italic;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.transformers-transfer .article-container-flex .div-container-p-information {
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+.transformers-transfer .article-container-flex .div-container-p-information p {
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.08rem;
+}
+
+.div-container-a-logos {
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-container-a-logos a {
+  text-decoration: none;
+  color: white;
+  width: 8%;
+}
+
+.div-container-a-logos a img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .transformers-transfer .article-container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+  }
+
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* @media screen and (min-width: 1400px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1.3rem;
+  }
+} */
+
+/* @media screen and (min-width: 1400px) {
+  .transformers-transfer .article-container-flex h3 {
+    font-size: 1rem;
+  }
+} */

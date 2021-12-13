@@ -1,0 +1,70 @@
+.div-container-mobile {
+  width: 100%;
+  position: relative;
+  height: 31.25rem;
+}
+
+.div-container-mobile figure {
+  width: 100%;
+  height: 100%;
+}
+
+.div-container-mobile figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-video-flex-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section-video-flex-mobile figure {
+  width: 100%;
+  height: 250px;
+}
+
+.section-video-flex-mobile figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.div-border-btn-canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.more-information {
+  padding: 1.5rem;
+  letter-spacing: 0.16rem;
+  border: none;
+  color: black;
+  background-color: aqua;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.div-container-canvas-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -0.4rem;
+  z-index: -1;
+}
+
+.div-border-btn-canvas .canvas-header-btn {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,240 @@
+.section-find-out-bg {
+  background-image: url("../assets/Cards/bgImage.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-style: italic;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.section-find-out-bg .article-find-out h2 {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "Courgette", cursive;
+  font-family: "PT Serif", serif;
+}
+
+.div-container-img-find-out {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.div-container-img-find-out a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  position: relative;
+}
+
+.div-container-img-find-out .second-a {
+  margin-top: 2.5rem;
+}
+
+.div-container-img-find-out article {
+  background-color: rgb(246, 246, 246);
+  margin: 1rem 0;
+}
+
+.div-container-img-find-out figure img {
+  width: 100%;
+}
+
+.div-container-title-article {
+  margin: auto;
+  width: 70%;
+}
+
+.div-container-img-find-out a h3 {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  font-style: italic;
+  font-family: "Courgette", cursive;
+  font-family: "PT Serif", serif;
+  font-weight: 800;
+}
+
+.div-border-a-find-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 1rem;
+}
+
+.border-aa {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .div-container-title-article {
+    margin: auto;
+    width: 50%;
+  }
+
+  .div-container-img-find-out a h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 4.5rem;
+  }
+
+  .div-container-img-find-out {
+    width: 80%;
+  }
+
+  .div-container-img-find-out a h3 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 4.7rem;
+    margin-top: 0;
+  }
+
+  .div-container-img-find-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+  }
+
+  .div-container-img-find-out .second-a {
+    margin-top: 0;
+  }
+
+  .div-container-img-find-out a {
+    width: 48%;
+  }
+
+  .div-container-title-article {
+    margin: auto;
+    width: 50%;
+  }
+
+  .div-container-img-find-out a h3 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 4.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .div-container-img-find-out {
+    width: 90%;
+  }
+
+  .div-container-img-find-out a {
+    width: 48%;
+  }
+
+  .div-container-title-article {
+    margin: auto;
+    width: 55%;
+  }
+
+  .div-container-img-find-out a h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 5.1rem;
+  }
+
+  .div-container-img-find-out {
+    width: 70%;
+  }
+
+  .div-container-title-article {
+    margin: auto;
+    width: 60%;
+  }
+
+  .div-container-img-find-out a h3 {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 5.2rem;
+  }
+
+  .div-container-img-find-out {
+    width: 60%;
+  }
+
+  .div-container-img-find-out a {
+    width: 48%;
+  }
+
+  .div-container-title-article {
+    margin: auto;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 2.48rem;
+  }
+
+  .section-find-out-bg .article-find-out h2 {
+    font-size: 6rem;
+  }
+}
