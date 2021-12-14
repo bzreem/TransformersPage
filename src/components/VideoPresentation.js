@@ -21,6 +21,8 @@ const VideoPresentation = () => {
           if (videoOne && videoTwo !== undefined) {
             $videoOne.play();
             $videoTwo.play();
+            $videoOne.loop = true;
+            $videoTwo.loop = true;
           }
         })
         .catch((e) => {

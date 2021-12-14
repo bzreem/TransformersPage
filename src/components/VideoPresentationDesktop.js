@@ -11,12 +11,12 @@ const VideoPresentationDesktop = () => {
   return (
     <div className="div-container-desktop">
       <figure className="figure-container-one">
-        <video id="video-one-presentation" muted loop src={video}></video>
+        <video id="video-one-presentation" muted src={video}></video>
       </figure>
       <section className="section-video-flex">
         <div className="video-container-two">
           <figure className="figure-container-two">
-            <video id="video-two-presentation" muted loop src={video}></video>
+            <video id="video-two-presentation" muted src={video}></video>
           </figure>
           <figure className="figure-container-three">
             <img src={title} alt="Title Transformers" />
