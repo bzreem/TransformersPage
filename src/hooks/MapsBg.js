@@ -50,8 +50,8 @@ const MapsBg = (element) => {
             el.classList.remove("active-video-maps");
             el.pause();
             $video[element].classList.add("active-video-maps");
-            $video[element].play();
           });
+          $video[element].play();
         }
       })
       .catch((e) => {

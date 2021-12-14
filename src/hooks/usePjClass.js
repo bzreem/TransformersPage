@@ -42,8 +42,8 @@ const usePjClass = (initialPj) => {
                 $video[e.target.dataset.number].classList.add(
                   "video-active-class"
                 );
-                $video[e.target.dataset.number].play();
               });
+              $video[e.target.dataset.number].play();
             }
           })
           .catch((e) => {
