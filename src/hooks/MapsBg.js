@@ -40,24 +40,56 @@ const MapsBg = (element) => {
   //     console.log("hola")
   //   }
   // });
+  // $video.forEach((el) => {
+  //   el.classList.remove("active-video-maps");
+  // });
+  // $video[element].classList.add("active-video-maps");
+  // if (
+  //   !(
+  //     $video[element].paused === false &&
+  //     $video[element].ended === false &&
+  //     $video[element].currentTime > 0
+  //   )
+  // ) {
+  //   $video[element].play();
+  // } else {
+  //   console.log("hola");
+  // }
 
-  let videoPlay = $video[element].play();
-  if (videoPlay !== undefined) {
-    videoPlay
+  let video = $video[element].play();
+  $video[element].classList.add("active-video-maps");
+
+  if (video !== undefined) {
+    video
       .then(() => {
-        if (videoPlay !== undefined) {
-          $video.forEach((el) => {
+        $video.forEach((el) => {
+          if (el !== $video[element]) {
             el.classList.remove("active-video-maps");
             el.pause();
-            $video[element].classList.add("active-video-maps");
-          });
-          $video[element].play();
-        }
+          }
+        });
       })
       .catch((e) => {
         console.log(e);
       });
   }
+  // let videoPlay = $video[element].play();
+  // if (videoPlay !== undefined) {
+  //   videoPlay
+  //     .then(() => {
+  //       if (videoPlay !== undefined) {
+  //         $video.forEach((el) => {
+  //           el.classList.remove("active-video-maps");
+  //           el.pause();
+  //         });
+  //         $video[element].classList.add("active-video-maps");
+  //         $video[element].play();
+  //       }
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // }
   // IntersectionObserverHelper($video[element])
   // console.log($video[element])
 

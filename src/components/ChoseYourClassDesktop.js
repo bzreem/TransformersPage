@@ -22,6 +22,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               data-information="Lider de los Autobots"
               data-number="0"
               data-type="1"
+              data-src={Tanque}
               value="TANQUES"
               onClick={handleChange}
             />
@@ -31,6 +32,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               data-information="Autobot de infiltración"
               data-number="1"
               data-type="1"
+              data-src={Infiltradores}
               value="INFILTRADORES"
               onClick={handleChange}
             />
@@ -40,6 +42,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               data-information="Decepticon de ciencia"
               data-number="2"
               data-type="2"
+              data-src={Cientificos}
               value="CIENTÍFICOS"
               onClick={handleChange}
             />
@@ -49,6 +52,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               data-information="Autobot Médico"
               data-number="3"
               data-type="1"
+              data-src={Medicos}
               value="MÉDICOS"
               onClick={handleChange}
             />
@@ -58,6 +62,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               data-information="Lider de los Dinobots"
               data-number="4"
               data-type="3"
+              data-src={Luchadores}
               value="LUCHADORES"
               onClick={handleChange}
             />
@@ -67,15 +72,14 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
             <figure className="figure-container-video-class">
               <video
                 className="video-choose-class video-active-class"
-                muted
                 autoPlay
+                muted
                 loop
                 src={Tanque}
               ></video>
               <video
                 className="video-choose-class"
                 muted
-                autoPlay
                 loop
                 src={Infiltradores}
               ></video>
@@ -83,7 +87,6 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               <video
                 className="video-choose-class"
                 muted
-                autoPlay
                 loop
                 src={Cientificos}
               ></video>
@@ -91,7 +94,6 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               <video
                 className="video-choose-class"
                 muted
-                autoPlay
                 loop
                 src={Medicos}
               ></video>
@@ -99,7 +101,6 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
               <video
                 className="video-choose-class"
                 muted
-                autoPlay
                 loop
                 src={Luchadores}
               ></video>

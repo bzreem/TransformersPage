@@ -5,9 +5,9 @@ import StarsCreamBg from "../assets/Img/starscreamBg.png";
 import Videoo from "../assets/Video/TransformersPresentacion.mp4";
 import Video1 from "../assets/Video/TransformersVideo1_Trim.mp4";
 import Video2 from "../assets/Video/TransformersVideo2_Trim.mp4";
-import prueba1 from "../assets/Cards/prueba2.png"
-import Metroplex from "../assets/Cards/metroplex.png"
-import Omega from "../assets/Cards/omega.png"
+import prueba1 from "../assets/Cards/prueba2.png";
+import Metroplex from "../assets/Cards/metroplex.png";
+import Omega from "../assets/Cards/omega.png";
 // import Bee from "../assets/Img/BeeMovie.jpg";
 // import MapsBg from "../hooks/MapsBg";
 const MapsDesktop = ({ MapsBg }) => {
@@ -41,14 +41,13 @@ const MapsDesktop = ({ MapsBg }) => {
               <figure className="figure-border-maps">
                 <video
                   muted
-                  autoPlay
                   loop
                   preload="auto"
                   className="active-video-maps"
                   src={Videoo}
                 ></video>
-                <video muted autoPlay loop preload="auto" src={Video1}></video>
-                <video muted autoPlay loop preload="auto" src={Video2}></video>
+                <video muted loop preload="auto" src={Video1}></video>
+                <video muted loop preload="auto" src={Video2}></video>
               </figure>
             </div>
 
@@ -57,7 +56,7 @@ const MapsDesktop = ({ MapsBg }) => {
                 <div className="div-container-figcaption">
                   <figure className="select-maps-figure-scale active-scale">
                     <img
-                    draggable= "true"
+                      draggable="true"
                       src={prueba1}
                       alt=""
                       onClick={() => {
@@ -65,7 +64,7 @@ const MapsDesktop = ({ MapsBg }) => {
                       }}
                       onDragCapture={(e) => {
                         // MapsBg(0);
-                        console.log(e)
+                        console.log(e);
                       }}
                     />
                   </figure>
