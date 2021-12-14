@@ -32,20 +32,24 @@ const usePjClass = (initialPj) => {
     if (matchMedia("(min-width:1024px)").matches) {
       let videoPlay = $video[e.target.dataset.number].play();
 
-      videoPlay
-        .then(() => {
-          if (videoPlay !== undefined) {
-            $video.forEach((el) => {
-              el.classList.remove("video-active-class");
-              el.pause();
-            });
-          }
-          $video[e.target.dataset.number].classList.add("video-active-class");
-          $video[e.target.dataset.number].play();
-        })
-        .catch((e) => {
-          console.log(e);
-        });
+      if (videoPlay !== undefined) {
+        videoPlay
+          .then(() => {
+            if (videoPlay !== undefined) {
+              $video.forEach((el) => {
+                el.classList.remove("video-active-class");
+                el.pause();
+                $video[e.target.dataset.number].classList.add(
+                  "video-active-class"
+                );
+                $video[e.target.dataset.number].play();
+              });
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
     }
 
     setPj(pjObj);

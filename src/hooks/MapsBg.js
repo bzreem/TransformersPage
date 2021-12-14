@@ -42,21 +42,22 @@ const MapsBg = (element) => {
   // });
 
   let videoPlay = $video[element].play();
-  videoPlay
-    .then(() => {
-      if (videoPlay !== undefined) {
-        $video.forEach((el) => {
-          el.classList.remove("active-video-maps");
-          el.pause();
-        });
-      }
-      $video[element].classList.add("active-video-maps");
-      $video[element].play();
-    })
-    .catch((e) => {
-      console.log(e);
-    });
-
+  if (videoPlay !== undefined) {
+    videoPlay
+      .then(() => {
+        if (videoPlay !== undefined) {
+          $video.forEach((el) => {
+            el.classList.remove("active-video-maps");
+            el.pause();
+            $video[element].classList.add("active-video-maps");
+            $video[element].play();
+          });
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }
   // IntersectionObserverHelper($video[element])
   // console.log($video[element])
 
