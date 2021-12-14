@@ -1,4 +1,4 @@
-import video from "../assets/Video/TransformersPresentacion.mp4";
+import video from "../assets/Video/TransformersPresentacion_2.mp4";
 import title from "../assets/logos/TransformersTitulo3.png";
 import "./VideoPresentationMobile.css";
 import { useEffect } from "react";

@@ -60,16 +60,24 @@ const usePjClass = (initialPj) => {
       $video[e.target.dataset.number].classList.add("video-active-class");
 
       if (video !== undefined) {
-        video.then(() => {
-          $video.forEach((el) => {
-            if (el !== $video[e.target.dataset.number]) {
-              el.classList.remove("video-active-class");
-              el.pause();
-            } else {
-              // console.log("sssss");
-            }
+        video
+          .then(() => {
+            $video.forEach((el) => {
+              if (
+                el !== $video[e.target.dataset.number] &&
+                el.currentTime > 0 &&
+                !el.paused
+              ) {
+                el.classList.remove("video-active-class");
+                el.pause();
+              } else {
+                // console.log("sssss");
+              }
+            });
+          })
+          .catch((e) => {
+            console.log(e);
           });
-        }).catch(e=>{console.log(e)})
       }
     }
 
