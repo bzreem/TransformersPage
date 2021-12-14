@@ -18,7 +18,7 @@ const VideoPresentation = () => {
 
       Promise.all([videoOne, videoTwo])
         .then(() => {
-          if (videoOne && videoTwo !== undefined) {
+          if (videoOne !== undefined && videoTwo !== undefined) {
             $videoOne.play();
             $videoTwo.play();
             $videoOne.loop = true;
