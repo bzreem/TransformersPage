@@ -43,11 +43,12 @@ const MapsDesktop = ({ MapsBg }) => {
                   muted
                   loop
                   autoPlay
+                  preload = "metadata"
                   className="active-video-maps"
                   src={Videoo}
                 ></video>
-                <video muted loop preload="auto" src={Video1}></video>
-                <video muted loop preload="auto" src={Video2}></video>
+                <video muted loop preload="metadata" src={Video1}></video>
+                <video muted loop preload="metadata" src={Video2}></video>
               </figure>
             </div>
 

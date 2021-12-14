@@ -11,7 +11,7 @@ const VideoPresentationMobile = () => {
   return (
     <div className = "div-container-mobile">
       <figure>
-        <video muted loop autoPlay src={video}></video>
+        <video preload="metadata" id= "video-presentation-mobile" muted src={video}></video>
       </figure>
       <section className="section-video-flex-mobile">
         <figure>

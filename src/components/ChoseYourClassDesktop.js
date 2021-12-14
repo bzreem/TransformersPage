@@ -75,6 +75,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
                 autoPlay
                 muted
                 loop
+                preload="metadata"
                 src={Tanque}
               ></video>
               <video
@@ -88,6 +89,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
                 className="video-choose-class"
                 muted
                 loop
+                preload="metadata"
                 src={Cientificos}
               ></video>
 
@@ -95,6 +97,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
                 className="video-choose-class"
                 muted
                 loop
+                preload="metadata"
                 src={Medicos}
               ></video>
 
@@ -102,6 +105,7 @@ const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
                 className="video-choose-class"
                 muted
                 loop
+                preload="metadata"
                 src={Luchadores}
               ></video>
             </figure>

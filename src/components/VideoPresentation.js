@@ -32,6 +32,14 @@ const VideoPresentation = () => {
       // IntersectionObserverHelper("#video-one-presentation")
       // IntersectionObserverHelper("#video-two-presentation")
     } else {
+      const $videoMobile = document.getElementById("video-presentation-mobile");
+      let videoMobile = $videoMobile.play();
+      videoMobile.then(() => {
+        if (videoMobile !== undefined) {
+          $videoMobile.play();
+          $videoMobile.loop = true;
+        }
+      });
     }
 
     return () => {};

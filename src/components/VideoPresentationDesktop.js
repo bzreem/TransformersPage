@@ -12,12 +12,22 @@ const VideoPresentationDesktop = () => {
   return (
     <div className="div-container-desktop">
       <figure className="figure-container-one">
-        <video id="video-one-presentation" muted src={vide2}></video>
+        <video
+          preload="metadata"
+          id="video-one-presentation"
+          muted
+          src={vide2}
+        ></video>
       </figure>
       <section className="section-video-flex">
         <div className="video-container-two">
           <figure className="figure-container-two">
-            <video id="video-two-presentation" muted src={vide2}></video>
+            <video
+              preload="metadata"
+              id="video-two-presentation"
+              muted
+              src={vide2}
+            ></video>
           </figure>
           <figure className="figure-container-three">
             <img src={title} alt="Title Transformers" />
