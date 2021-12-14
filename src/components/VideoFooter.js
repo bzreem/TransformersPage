@@ -1,4 +1,4 @@
-import video from "../assets/Video/TransformersPresentacion.mp4";
+import video from "../assets/Video/TransformersPresentacion_2.mp4";
 import "./VideoFooter.css";
 import AutoBg from "../assets/logos/AutoBg.png";
 import DeceptBg from "../assets/logos/DecepBg.png";

@@ -1,14 +1,14 @@
-import Prime from "../assets/Img/OptimusPrime.png";
-import Bee from "../assets/Img/Bumblebee.png";
-import Sound from "../assets/Img/Soundwave.png";
-import Jet from "../assets/Img/Jetfire.png";
-import Grim from "../assets/Img/Grimlock.png";
+import Prime from "../assets/Img/OptimusPrime_Comprim.png";
+import Bee from "../assets/Img/Bumblebee_Comprim.png";
+import Sound from "../assets/Img/Soundwave_Comprim.png";
+import Jet from "../assets/Img/Jetfire_Comprim.png";
+import Grim from "../assets/Img/Grimlock_Comprim.png";
 // import video from "../assets/Video/TransformersPresentacion.mp4";
-import Tanque from "../assets/Video/Tanque2.mp4";
-import Infiltradores from "../assets/Video/Infiltradores.mp4";
-import Cientificos from "../assets/Video/Cientificos.mp4";
-import Medicos from "../assets/Video/Medicos.mp4";
-import Luchadores from "../assets/Video/Luchadores.mp4";
+import Tanque from "../assets/Video/Tanque2_Comprim.mp4";
+import Infiltradores from "../assets/Video/Infiltradores_Comprim.mp4";
+import Cientificos from "../assets/Video/Cientificos_Comprim.mp4";
+import Medicos from "../assets/Video/Medicos_Comprim.mp4";
+import Luchadores from "../assets/Video/Luchadores_Comprim.mp4";
 const ChoseYourClassDesktop = ({ handleChange, pj, bg }) => {
   return (
     <div className="div-container-desktop-flex">

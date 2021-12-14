@@ -1,10 +1,10 @@
 import "./Maps.css";
-import MegaBg from "../assets/Img/megatronBg.png";
-import GrimlockBg from "../assets/Img/GrimlockBg.png";
-import StarsCreamBg from "../assets/Img/starscreamBg.png";
-import Videoo from "../assets/Video/TransformersPresentacion.mp4";
-import Video1 from "../assets/Video/TransformersVideo1_Trim.mp4";
-import Video2 from "../assets/Video/TransformersVideo2_Trim.mp4";
+import MegaBg from "../assets/Img/megatronBg_Comprim.png";
+import GrimlockBg from "../assets/Img/GrimlockBg_Comprim.png";
+import StarsCreamBg from "../assets/Img/starscreamBg_Comprim.png";
+import Videoo from "../assets/Video/TransformersPresentacion_1Comprim.mp4";
+import Video1 from "../assets/Video/TransformersVideo1_Trim_Comprim.mp4";
+import Video2 from "../assets/Video/TransformersVideo2_Trim_1_Comprim.mp4";
 import prueba1 from "../assets/Cards/prueba2.png";
 import Metroplex from "../assets/Cards/metroplex.png";
 import Omega from "../assets/Cards/omega.png";
@@ -42,7 +42,7 @@ const MapsDesktop = ({ MapsBg }) => {
                 <video
                   muted
                   loop
-                  preload="auto"
+                  autoPlay
                   className="active-video-maps"
                   src={Videoo}
                 ></video>
@@ -61,10 +61,6 @@ const MapsDesktop = ({ MapsBg }) => {
                       alt=""
                       onClick={() => {
                         MapsBg(0);
-                      }}
-                      onDragCapture={(e) => {
-                        // MapsBg(0);
-                        console.log(e);
                       }}
                     />
                   </figure>

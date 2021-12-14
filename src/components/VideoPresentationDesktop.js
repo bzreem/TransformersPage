@@ -1,5 +1,6 @@
-import video from "../assets/Video/TransformersPresentacion.mp4";
-import Video2 from "../assets/Video/BeeMovie.mp4";
+// import video from "../assets/Video/TransformersPresentacion_1.mp4";
+import vide2 from "../assets/Video/TransformersPresentacion_2.mp4";
+// import Video2 from "../assets/Video/BeeMovie.mp4";
 import "./VideoPresentation.css";
 import title from "../assets/logos/TransformersTitulo3.png";
 import { useEffect } from "react";
@@ -11,12 +12,12 @@ const VideoPresentationDesktop = () => {
   return (
     <div className="div-container-desktop">
       <figure className="figure-container-one">
-        <video id="video-one-presentation" muted src={video}></video>
+        <video id="video-one-presentation" muted src={vide2}></video>
       </figure>
       <section className="section-video-flex">
         <div className="video-container-two">
           <figure className="figure-container-two">
-            <video id="video-two-presentation" muted src={video}></video>
+            <video id="video-two-presentation" muted src={vide2}></video>
           </figure>
           <figure className="figure-container-three">
             <img src={title} alt="Title Transformers" />

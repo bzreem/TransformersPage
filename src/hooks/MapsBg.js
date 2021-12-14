@@ -1,5 +1,3 @@
-// import { IntersectionObserverHelper } from "../components/helpers/IntersectionObserverHelper";
-
 const MapsBg = (element) => {
   const $img = document.querySelectorAll(
     ".section-maps .figure-maps-absolute img"
@@ -63,7 +61,7 @@ const MapsBg = (element) => {
     video
       .then(() => {
         $video.forEach((el) => {
-          if (el !== $video[element]) {
+          if (el !== $video[element] && el.currentTime > 0 && !el.paused) {
             el.classList.remove("active-video-maps");
             el.pause();
           }
