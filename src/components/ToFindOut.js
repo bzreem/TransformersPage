@@ -1,5 +1,6 @@
 import "./ToFindOut.css";
-import Bee from "../assets/Img/BeeMovie.jpg";
+import Bee from "../assets/Img/transformersSiege1.jpg";
+import Bee2 from "../assets/Img/transformersSiege2.jpg";
 import { useEffect } from "react";
 import { canvasHelper } from "./helpers/canvasHelper";
 const ToFindOut = () => {
@@ -21,7 +22,7 @@ const ToFindOut = () => {
               <img src={Bee} alt="" />
             </figure>
             <div className="div-container-title-article">
-              <h3>ESTRUCTURA COMPETITIVA 2021</h3>
+              <h3>ESTRUCTURA COMPETITIVA 2020</h3>
             </div>
           </article>
           <div className="div-border-a-find-out">
@@ -32,7 +33,7 @@ const ToFindOut = () => {
         <a href="sd" className="second-a">
           <article>
             <figure>
-              <img src={Bee} alt="" />
+              <img src={Bee2} alt="" />
             </figure>
             <div className="div-container-title-article">
               <h3>ESTRUCTURA COMPETITIVA 2021</h3>
