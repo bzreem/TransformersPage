@@ -20,9 +20,15 @@
 .container-carousel {
   margin-top: 1rem;
   position: relative;
+  width: 100%;
+  overflow-x: scroll;
 }
 
-.carousel-previous,
+.container-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* .carousel-previous,
 .carousel-next {
   border: none;
   display: inline;
@@ -43,12 +49,19 @@
   top: 0;
   right: 0;
   bottom: 0;
+} */
+
+.list-carousel {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .list-carousel a {
   display: flex;
   height: auto;
-  width: 80%;
+  width: 95%;
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
@@ -129,26 +142,32 @@
 }
 
 @media screen and (min-width: 350px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 65%;
-  }
+  } */
 }
 
 @media screen and (min-width: 450px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 58%;
-  }
+  } */
 }
 
 @media screen and (min-width: 500px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 95%;
-  }
+  } */
 }
 
 @media screen and (min-width: 600px) {
+  .list-carousel {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+
   .list-carousel a {
-    width: 90%;
+    width: 98%;
   }
   .list-carousel a article h4 {
     font-size: 0.85rem;
@@ -160,45 +179,42 @@
 }
 
 @media screen and (min-width: 650px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 87%;
-  }
+  } */
 }
 
 @media screen and (min-width: 700px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 75%;
-  }
+  } */
 }
 
 @media screen and (min-width: 800px) {
-  .list-carousel a {
+  /* .list-carousel a {
     width: 95%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
   .list-carousel a {
     width: 97%;
   }
-
-  .glider-dots,
-  .carousel-previous,
-  .carousel-next {
-    display: none;
+  .list-carousel {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-carousel a {
-    width: 85%;
+    width: 93%;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .list-carousel a {
     height: 125px;
-    width: 77%;
+    width: 100%;
   }
 
   .list-carousel a figure {

@@ -42,7 +42,7 @@ const Carousel = () => {
   return (
     <>
       <div className="div-position-title">
-        <section className="carousel">
+        {/* <section className="carousel">
           <div className="container-carousel">
             <div className="list-carousel">
               <article>
@@ -118,6 +118,72 @@ const Carousel = () => {
             aria-roledescription="tablelist"
             className="carousel-indicators"
           ></div>
+        </section> */}
+
+        <section className="carousel">
+          <div className="container-carousel">
+            <div className="list-carousel">
+              <article>
+                <a href="as" className="carousel-element">
+                  <figure>
+                    <img src={King} alt="" />
+                  </figure>
+                  <article>
+                    <h4>Clasificación: Dinobots</h4>
+                    <h3>Autobot Grimlock</h3>
+                  </article>
+                  <div className="container-border-a">
+                    <canvas className="border-a"></canvas>
+                  </div>
+                </a>
+              </article>
+
+              <article>
+                <a href="as" className="carousel-element">
+                  <figure>
+                    <img src={Prime} alt="" />
+                  </figure>
+                  <article>
+                    <h4>Clasificación: Dinobots</h4>
+                    <h3>Autobot Grimlock</h3>
+                  </article>
+                  <div className="container-border-a">
+                    <canvas className="border-a"></canvas>
+                  </div>
+                </a>
+              </article>
+
+              <article>
+                <a href="as" className="carousel-element">
+                  <figure>
+                    <img src={Galvatron} alt="" />
+                  </figure>
+                  <article>
+                    <h4>Clasificación: Dinobots</h4>
+                    <h3>Autobot Grimlock</h3>
+                  </article>
+                  <div className="container-border-a">
+                    <canvas className="border-a"></canvas>
+                  </div>
+                </a>
+              </article>
+
+              <article>
+                <a href="as" className="carousel-element">
+                  <figure>
+                    <img src={Bee} alt="" />
+                  </figure>
+                  <article>
+                    <h4>Clasificación: Dinobots</h4>
+                    <h3>Autobot Grimlock</h3>
+                  </article>
+                  <div className="container-border-a">
+                    <canvas className="border-a"></canvas>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
         </section>
 
         <h2 className="title-carousel">Transformers destacados_</h2>

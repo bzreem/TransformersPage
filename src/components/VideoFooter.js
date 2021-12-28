@@ -21,7 +21,7 @@ const VideoFooter = () => {
           </div>
           <div className="div-container-p-information">
             <p>
-              Descarga la aplicación de LoL para conectarte con amigos y recibir
+              Descarga la aplicación de Transformers para conectarte con amigos y recibir
               las noticias más recientes del juego y de los esports.
             </p>
           </div>

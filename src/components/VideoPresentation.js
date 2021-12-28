@@ -2,9 +2,11 @@ import { useResizeWindow } from "../hooks/useResizeWindow";
 import { useEffect } from "react";
 import VideoPresentationDesktop from "./VideoPresentationDesktop";
 import VideoPresentationMobile from "./VideoPresentationMobile";
+import { useHistoryChange } from "../hooks/useUrlChange";
 // import { IntersectionObserverHelper } from "./helpers/IntersectionObserverHelper";
 const VideoPresentation = () => {
   let [mq] = useResizeWindow("(min-width: 600px)");
+  // let [historyChange] = useHistoryChange();
 
   useEffect(() => {
     if (mq === null) return;
@@ -28,9 +30,6 @@ const VideoPresentation = () => {
         .catch((e) => {
           console.log(e);
         });
-
-      // IntersectionObserverHelper("#video-one-presentation")
-      // IntersectionObserverHelper("#video-two-presentation")
     } else {
       const $videoMobile = document.getElementById("video-presentation-mobile");
       let videoMobile = $videoMobile.play();

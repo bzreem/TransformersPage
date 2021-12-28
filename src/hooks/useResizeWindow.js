@@ -19,6 +19,13 @@ const useResizeWindow = (mediaQuerie) => {
     }
   });
 
+  window.addEventListener("hashchange", () => {
+    if (matchMedia(mediaQuerie).matches) {
+      setMq(true);
+    } else {
+      setMq(false);
+    }
+  });
   return [mq];
 };
 

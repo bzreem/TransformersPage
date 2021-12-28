@@ -1,3 +1,4 @@
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 import Carousel from "./components/Carousel";
 import ChoseYourClass from "./components/ChoseYourClass";
 import Footer from "./components/Footer";
@@ -13,24 +14,29 @@ import "./index.css";
 function App() {
   return (
     <>
-      <Header />
-      <VideoPresentation />
-      <Carousel />
-      <InformationMovie />
-      <ChoseYourClass />
-      <PjPersonalitation />
-      <Maps />
-      <StarTransformers />
-      <ToFindOut />
-      <VideoFooter />
-      <Footer />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <HashRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <VideoPresentation />
+            <Carousel />
+            <InformationMovie />
+            <ChoseYourClass />
+            <PjPersonalitation />
+            <Maps />
+            <StarTransformers />
+            <ToFindOut />
+            <VideoFooter />
+            <Footer />
+          </Route>
+
+          <Route path="*">
+            {/* <Header /> */}
+            <h2>Sección en desarrollo</h2>
+            <Link to="/">Volver al inicio</Link>
+          </Route>
+        </Switch>
+      </HashRouter>
     </>
   );
 }

@@ -15,7 +15,7 @@ const StarTransformers = () => {
           <h2>LA GUERRA</h2>
           <div className="container-p-start">
             <p>
-              ¿No conoces League of Legends? Aquí encontrarás un buen resumen de
+              ¿No conoces Transformers? Aquí encontrarás un buen resumen de
               los fundamentos del modo de juego más popular.
             </p>
           </div>
