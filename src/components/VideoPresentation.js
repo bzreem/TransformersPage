@@ -23,6 +23,8 @@ const VideoPresentation = () => {
           if (videoOne !== undefined && videoTwo !== undefined) {
             $videoOne.play();
             $videoTwo.play();
+            $videoOne.currentTime = 0;
+            $videoTwo.currentTime = 0;
             $videoOne.loop = true;
             $videoTwo.loop = true;
           }
