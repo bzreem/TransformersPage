@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TransformersPage/static/css/main.c7898fee.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.0b046f31.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.0b046f31.chunk.js.map",
+    "main.css": "/TransformersPage/static/css/main.611239a2.chunk.css",
+    "main.js": "/TransformersPage/static/js/main.c45d11c3.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.c45d11c3.chunk.js.map",
     "runtime-main.js": "/TransformersPage/static/js/runtime-main.b1b6c60f.js",
     "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.b1b6c60f.js.map",
-    "static/js/2.abcefa74.chunk.js": "/TransformersPage/static/js/2.abcefa74.chunk.js",
-    "static/js/2.abcefa74.chunk.js.map": "/TransformersPage/static/js/2.abcefa74.chunk.js.map",
+    "static/js/2.3d1a9f25.chunk.js": "/TransformersPage/static/js/2.3d1a9f25.chunk.js",
+    "static/js/2.3d1a9f25.chunk.js.map": "/TransformersPage/static/js/2.3d1a9f25.chunk.js.map",
     "static/js/3.ac2bb803.chunk.js": "/TransformersPage/static/js/3.ac2bb803.chunk.js",
     "static/js/3.ac2bb803.chunk.js.map": "/TransformersPage/static/js/3.ac2bb803.chunk.js.map",
     "index.html": "/TransformersPage/index.html",
-    "static/css/main.c7898fee.chunk.css.map": "/TransformersPage/static/css/main.c7898fee.chunk.css.map",
-    "static/js/2.abcefa74.chunk.js.LICENSE.txt": "/TransformersPage/static/js/2.abcefa74.chunk.js.LICENSE.txt",
+    "static/css/main.611239a2.chunk.css.map": "/TransformersPage/static/css/main.611239a2.chunk.css.map",
+    "static/js/2.3d1a9f25.chunk.js.LICENSE.txt": "/TransformersPage/static/js/2.3d1a9f25.chunk.js.LICENSE.txt",
     "static/media/1.07b7a3af.png": "/TransformersPage/static/media/1.07b7a3af.png",
     "static/media/2.1afc10f8.png": "/TransformersPage/static/media/2.1afc10f8.png",
     "static/media/3.617aa159.png": "/TransformersPage/static/media/3.617aa159.png",
@@ -63,8 +63,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b1b6c60f.js",
-    "static/js/2.abcefa74.chunk.js",
-    "static/css/main.c7898fee.chunk.css",
-    "static/js/main.0b046f31.chunk.js"
+    "static/js/2.3d1a9f25.chunk.js",
+    "static/css/main.611239a2.chunk.css",
+    "static/js/main.c45d11c3.chunk.js"
   ]
 }
