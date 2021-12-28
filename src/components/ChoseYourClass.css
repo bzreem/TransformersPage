@@ -2,6 +2,13 @@
   margin-top: 5rem;
 }
 
+.span-container-class {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .section-class-pj .article-class-title {
   width: 60%;
   margin: auto;
