@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TransformersPage/static/css/main.d385c84f.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.9ab7f309.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.9ab7f309.chunk.js.map",
-    "runtime-main.js": "/TransformersPage/static/js/runtime-main.b1b6c60f.js",
-    "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.b1b6c60f.js.map",
+    "main.css": "/TransformersPage/static/css/main.a90417ba.chunk.css",
+    "main.js": "/TransformersPage/static/js/main.e6516e7b.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.e6516e7b.chunk.js.map",
+    "runtime-main.js": "/TransformersPage/static/js/runtime-main.5803dbeb.js",
+    "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.5803dbeb.js.map",
     "static/js/2.3d1a9f25.chunk.js": "/TransformersPage/static/js/2.3d1a9f25.chunk.js",
     "static/js/2.3d1a9f25.chunk.js.map": "/TransformersPage/static/js/2.3d1a9f25.chunk.js.map",
-    "static/js/3.ac2bb803.chunk.js": "/TransformersPage/static/js/3.ac2bb803.chunk.js",
-    "static/js/3.ac2bb803.chunk.js.map": "/TransformersPage/static/js/3.ac2bb803.chunk.js.map",
+    "static/js/3.8aa02434.chunk.js": "/TransformersPage/static/js/3.8aa02434.chunk.js",
+    "static/js/3.8aa02434.chunk.js.map": "/TransformersPage/static/js/3.8aa02434.chunk.js.map",
     "index.html": "/TransformersPage/index.html",
-    "static/css/main.d385c84f.chunk.css.map": "/TransformersPage/static/css/main.d385c84f.chunk.css.map",
+    "static/css/main.a90417ba.chunk.css.map": "/TransformersPage/static/css/main.a90417ba.chunk.css.map",
     "static/js/2.3d1a9f25.chunk.js.LICENSE.txt": "/TransformersPage/static/js/2.3d1a9f25.chunk.js.LICENSE.txt",
     "static/media/1.07b7a3af.png": "/TransformersPage/static/media/1.07b7a3af.png",
     "static/media/2.1afc10f8.png": "/TransformersPage/static/media/2.1afc10f8.png",
@@ -55,6 +55,7 @@
     "static/media/megatronBg_Comprim.6d434fe6.png": "/TransformersPage/static/media/megatronBg_Comprim.6d434fe6.png",
     "static/media/metroplex.775a1007.png": "/TransformersPage/static/media/metroplex.775a1007.png",
     "static/media/omega.1c39f7b1.png": "/TransformersPage/static/media/omega.1c39f7b1.png",
+    "static/media/prime.ad764c44.png": "/TransformersPage/static/media/prime.ad764c44.png",
     "static/media/prueba2.775858af.png": "/TransformersPage/static/media/prueba2.775858af.png",
     "static/media/starscreamBg_Comprim.b52982ef.png": "/TransformersPage/static/media/starscreamBg_Comprim.b52982ef.png",
     "static/media/transformersSiege1.1bc6de11.jpg": "/TransformersPage/static/media/transformersSiege1.1bc6de11.jpg",
@@ -62,9 +63,9 @@
     "static/media/twitter.12c66524.png": "/TransformersPage/static/media/twitter.12c66524.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1b6c60f.js",
+    "static/js/runtime-main.5803dbeb.js",
     "static/js/2.3d1a9f25.chunk.js",
-    "static/css/main.d385c84f.chunk.css",
-    "static/js/main.9ab7f309.chunk.js"
+    "static/css/main.a90417ba.chunk.css",
+    "static/js/main.e6516e7b.chunk.js"
   ]
 }
