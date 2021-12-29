@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import InformationMovie from "./components/InformationMovie";
 import Maps from "./components/Maps";
+import PagePrimeBio from "./components/pages/PagePrimeBio";
 import PjPersonalitation from "./components/PjPersonalitation";
 import StarTransformers from "./components/StarTransformers";
 import ToFindOut from "./components/ToFindOut";
@@ -30,6 +31,7 @@ function App() {
             <Footer />
           </Route>
 
+<Route exact path="/OptimusPrime" component={PagePrimeBio}/>
           <Route path="*">
             {/* <Header /> */}
             <h2>Sección en desarrollo</h2>

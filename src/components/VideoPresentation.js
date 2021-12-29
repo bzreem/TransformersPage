@@ -43,7 +43,9 @@ const VideoPresentation = () => {
       });
     }
 
-    return () => {};
+    return () => {
+      if (mq === null) return;
+    };
   }, [mq]);
 
   return <>{mq ? <VideoPresentationDesktop /> : <VideoPresentationMobile />}</>;
