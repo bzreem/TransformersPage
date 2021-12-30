@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TransformersPage/static/css/main.bafc6dd9.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.3f4e7c11.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.3f4e7c11.chunk.js.map",
+    "main.css": "/TransformersPage/static/css/main.70dbaee9.chunk.css",
+    "main.js": "/TransformersPage/static/js/main.4ca7e826.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.4ca7e826.chunk.js.map",
     "runtime-main.js": "/TransformersPage/static/js/runtime-main.5803dbeb.js",
     "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.5803dbeb.js.map",
     "static/js/2.da70b60a.chunk.js": "/TransformersPage/static/js/2.da70b60a.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8aa02434.chunk.js": "/TransformersPage/static/js/3.8aa02434.chunk.js",
     "static/js/3.8aa02434.chunk.js.map": "/TransformersPage/static/js/3.8aa02434.chunk.js.map",
     "index.html": "/TransformersPage/index.html",
-    "static/css/main.bafc6dd9.chunk.css.map": "/TransformersPage/static/css/main.bafc6dd9.chunk.css.map",
+    "static/css/main.70dbaee9.chunk.css.map": "/TransformersPage/static/css/main.70dbaee9.chunk.css.map",
     "static/js/2.da70b60a.chunk.js.LICENSE.txt": "/TransformersPage/static/js/2.da70b60a.chunk.js.LICENSE.txt",
     "static/media/1.07b7a3af.png": "/TransformersPage/static/media/1.07b7a3af.png",
     "static/media/2.1afc10f8.png": "/TransformersPage/static/media/2.1afc10f8.png",
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.5803dbeb.js",
     "static/js/2.da70b60a.chunk.js",
-    "static/css/main.bafc6dd9.chunk.css",
-    "static/js/main.3f4e7c11.chunk.js"
+    "static/css/main.70dbaee9.chunk.css",
+    "static/js/main.4ca7e826.chunk.js"
   ]
 }
