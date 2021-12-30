@@ -27,7 +27,7 @@ const Maps = () => {
       window.removeEventListener("resize", WindowRisezeHash);
       document.removeEventListener("DOMContentLoaded", DomLoadedHash);
       window.removeEventListener("hashchange", hashChangeWindow);
-      setMapsVisibilite(null);
+      // setMapsVisibilite(null);
     };
   }, [mq]);
   return (

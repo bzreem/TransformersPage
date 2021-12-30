@@ -86,6 +86,7 @@ const useResizeWindow = (mediaQuerie) => {
     if (matchMedia(mediaQuerie).matches) {
       setMq(true);
     } else {
+      setMq(false);
     }
   }
 
