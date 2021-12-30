@@ -6,15 +6,29 @@
 .container-img-bio {
   width: 100%;
   height: 100vh;
+  background-image: url("../../assets/optimusPrime/prime.png");
+  background-position: top;
+  background-size: 298%  100%;
+  background-repeat: no-repeat;
 }
 
-.container-img-bio figure{
-    width: 100%;
-    height: 100%;
+
+@media screen and (min-width: 520px) {
+  .container-img-bio {
+    background-size: 285%  100%;
+  }
 }
 
-.container-img-bio figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+@media screen and (min-width: 560px) {
+  .container-img-bio {
+    background-size: 270%  100%;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .container-img-bio {
+    background-size: cover
+  }
 }

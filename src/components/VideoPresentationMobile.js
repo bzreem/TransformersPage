@@ -7,6 +7,14 @@ const VideoPresentationMobile = () => {
 
   useEffect(()=>{
     canvasHelper(".canvas-header-btn", "0.5rem", "white", 30, 0, 30, 0);
+    const $videoMobile = document.getElementById("video-presentation-mobile");
+    let videoMobile = $videoMobile.play();
+    videoMobile.then(() => {
+      if (videoMobile !== undefined) {
+        $videoMobile.play();
+        $videoMobile.loop = true;
+      }
+    });
   },[])
   return (
     <div className = "div-container-mobile">

@@ -4,9 +4,9 @@ const PagePrimeBio = () => {
   return (
     <section className="container-section-bio">
       <div className="container-img-bio">
-        <figure>
+        {/* <figure>
           <img src={PrimeBio} alt="" />
-        </figure>
+        </figure> */}
       </div>
     </section>
   );

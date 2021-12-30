@@ -8,6 +8,27 @@ import { canvasHelper } from "./helpers/canvasHelper";
 const VideoPresentationDesktop = () => {
   useEffect(() => {
     canvasHelper(".canvas-header-btn", "0.5rem", "white", 30, 0, 30, 0);
+    const $videoOne = document.getElementById("video-one-presentation");
+    const $videoTwo = document.getElementById("video-two-presentation");
+    $videoOne.muted = true;
+    $videoTwo.muted = true;
+    let videoOne = $videoOne.play();
+    let videoTwo = $videoTwo.play();
+
+    Promise.all([videoOne, videoTwo])
+      .then(() => {
+        if (videoOne !== undefined && videoTwo !== undefined) {
+          $videoOne.play();
+          $videoTwo.play();
+          $videoOne.currentTime = 0;
+          $videoTwo.currentTime = 0;
+          $videoOne.loop = true;
+          $videoTwo.loop = true;
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   }, []);
   return (
     <div className="div-container-desktop">

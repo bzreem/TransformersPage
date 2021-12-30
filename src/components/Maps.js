@@ -8,12 +8,27 @@ import MapsBg from "../hooks/MapsBg";
 import MapsMobile from "./MapsMobile";
 import MapsDesktop from "./MapsDesktop";
 import { useResizeWindow } from "../hooks/useResizeWindow";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Maps = () => {
-  let [mq] = useResizeWindow("(min-width: 1400px)");
+  let [mq, WindowRisezeHash, DomLoadedHash, hashChangeWindow] = useResizeWindow(
+    "(min-width: 1400px)"
+  );
+
+  let [mapsVisibility, setMapsVisibilite] = useState(null);
   useEffect(() => {
     if (mq === null) return;
-    return () => {};
+
+    if (mq) {
+      setMapsVisibilite(<MapsDesktop MapsBg={MapsBg} />);
+    } else {
+      setMapsVisibilite(<MapsMobile MapsBg={MapsBg} />);
+    }
+    return () => {
+      window.removeEventListener("resize", WindowRisezeHash);
+      document.removeEventListener("DOMContentLoaded", DomLoadedHash);
+      window.removeEventListener("hashchange", hashChangeWindow);
+      setMapsVisibilite(null);
+    };
   }, [mq]);
   return (
     <>
@@ -106,7 +121,8 @@ const Maps = () => {
         </article>
       </section> */}
 
-      {mq ? <MapsDesktop MapsBg={MapsBg} /> : <MapsMobile MapsBg={MapsBg} />}
+      {/* {mq ? <MapsDesktop MapsBg={MapsBg} /> : <MapsMobile MapsBg={MapsBg} />} */}
+      {mapsVisibility}
     </>
   );
 };

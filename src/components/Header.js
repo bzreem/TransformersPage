@@ -16,7 +16,9 @@ const Header = () => {
       setHeader(<HeaderMobile />);
     }
 
-    return ()=>{}
+    return () => {
+      setHeader(null);
+    };
   }, [mq]);
   return <>{header}</>;
 };

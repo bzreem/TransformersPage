@@ -8,7 +8,9 @@ import ChoseYourClassDesktop from "./ChoseYourClassDesktop";
 import { useResizeWindow } from "../hooks/useResizeWindow";
 import ChoseYourClassMobile from "./ChoseYourClassMobile";
 const ChoseYourClass = () => {
-  const [mq] = useResizeWindow("(min-width: 1024px)");
+  const [mq, WindowRisezeHash, DomLoadedHash, hashChangeWindow] =
+    useResizeWindow("(min-width: 1024px)");
+    let [classVisibility, setClassVisibilite] = useState(null);
   let [pj, handleChange] = usePjClass({
     name: "OPTIMUS PRIME",
     info: "Lider de los Autobots",
@@ -49,6 +51,18 @@ const ChoseYourClass = () => {
 
   useEffect(() => {
     if (mq === null) return;
+    if(mq){
+      setClassVisibilite(<ChoseYourClassDesktop handleChange={handleChange} pj={pj} bg={bg} />)
+    }else{
+      setClassVisibilite(  <ChoseYourClassMobile handleChange={handleChange} pj={pj} bg={bg} />)
+    }
+
+    return () => {
+      window.removeEventListener("resize", WindowRisezeHash);
+      document.removeEventListener("DOMContentLoaded", DomLoadedHash);
+      window.removeEventListener("hashchange", hashChangeWindow);
+      setClassVisibilite(null)
+    };
   }, [mq]);
 
   return (
@@ -140,11 +154,12 @@ const ChoseYourClass = () => {
           <div className="container-img-bg" style={bg}></div>
         </div>
       </div> */}
-      {mq ? (
+      {/* {mq ? (
         <ChoseYourClassDesktop handleChange={handleChange} pj={pj} bg={bg} />
       ) : (
         <ChoseYourClassMobile handleChange={handleChange} pj={pj} bg={bg} />
-      )}
+      )} */}
+      {classVisibility}
     </section>
   );
 };

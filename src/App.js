@@ -31,7 +31,7 @@ function App() {
             <Footer />
           </Route>
 
-<Route exact path="/OptimusPrime" component={PagePrimeBio}/>
+          <Route exact path="/OptimusPrime" component={PagePrimeBio} />
           <Route path="*">
             {/* <Header /> */}
             <h2>Sección en desarrollo</h2>
