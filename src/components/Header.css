@@ -9,6 +9,10 @@
   background-color: black;
   z-index: -10;
 }
+
+.header-styles-2 a{
+  opacity: 0;
+}
 header {
   position: sticky;
   top: 0;

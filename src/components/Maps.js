@@ -16,18 +16,24 @@ const Maps = () => {
 
   let [mapsVisibility, setMapsVisibilite] = useState(null);
   useEffect(() => {
-    if (mq === null) return;
+    const prueba = async () => {
+      if (mq === null) return;
 
-    if (mq) {
-      setMapsVisibilite(<MapsDesktop MapsBg={MapsBg} />);
-    } else {
-      setMapsVisibilite(<MapsMobile MapsBg={MapsBg} />);
-    }
+      if (mq) {
+        setMapsVisibilite(<MapsDesktop MapsBg={MapsBg} />);
+      } else {
+        setMapsVisibilite(<MapsMobile MapsBg={MapsBg} />);
+      }
+    };
+    let controller = new AbortController();
+    let signal = controller.signal;
+    Promise.all([prueba], { signal }).then(() => prueba());
     return () => {
+      controller.abort();
       window.removeEventListener("resize", WindowRisezeHash);
       document.removeEventListener("DOMContentLoaded", DomLoadedHash);
       window.removeEventListener("hashchange", hashChangeWindow);
-      // setMapsVisibilite(null);
+      setMapsVisibilite(null);
     };
   }, [mq]);
   return (

@@ -1,4 +1,4 @@
-const MapsBg = (element) => {
+const MapsBg = async (element) => {
   const $img = document.querySelectorAll(
     ".section-maps .figure-maps-absolute img"
   );
@@ -56,9 +56,11 @@ const MapsBg = (element) => {
 
   let video = $video[element].play();
   $video[element].classList.add("active-video-maps");
+  let controller = new AbortController();
+  let signal = controller.signal;
 
   if (video !== undefined) {
-    video
+    Promise.all([video], {signal: signal})
       .then(() => {
         $video.forEach((el) => {
           if (el !== $video[element] && el.currentTime > 0 && !el.paused) {
@@ -70,6 +72,10 @@ const MapsBg = (element) => {
       .catch((e) => {
         console.log(e);
       });
+
+    if (window.location.hash !== "#/") {
+      controller.abort();
+    }
   }
   // let videoPlay = $video[element].play();
   // if (videoPlay !== undefined) {
