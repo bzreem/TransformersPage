@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import "./PagePrimeBio.css";
+import RowDown from "../../assets/logos/rowDown.png"
 const PagePrimeBio = () => {
   useEffect(() => {
+    window.scrollTo(0, 0)
     const $containerImg = document.querySelector(".container-img-bio");
     const $articleTitle = document.querySelector(".article-title");
     const $sectionBio = document.querySelector(".section-bio");
@@ -32,10 +34,15 @@ const PagePrimeBio = () => {
 
         <div className="div-instruction">
           <p>DESPLÁZATE PARA COMENZAR</p>
+          <figure>
+            <img src= {RowDown} alt=""/>
+          </figure>
         </div>
       </div>
 
       <section className="section-bio">
+        <div className="line-gold"></div>
+        <div className="rotate-div"></div>
         <div className="div-title">
           <h2>OPTIMUS PRIME</h2>
           <h3>LIDER AUTOBOT</h3>

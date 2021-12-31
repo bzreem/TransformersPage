@@ -63,12 +63,21 @@
 
 .div-instruction {
   width: 100%;
-  height: 15%;
+  height: 20%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   text-align: center;
   color: #a09b8c;
+}
+
+.div-instruction figure{
+  margin-top: 1rem;
+}
+
+.div-instruction figure img{
+  width: 100%;
 }
 
 .section-bio {
@@ -81,8 +90,24 @@
   transition: 2.5s opacity ease-out;
 }
 
+.line-gold {
+  width: 2px;
+  height: 50px;
+  margin: auto;
+  background-color: #c8aa6e;
+}
+
+.rotate-div {
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  transform: rotate(45deg);
+  border: 2px solid #c8aa6e;
+  overflow: hidden;
+}
 .div-title {
   width: 100%;
+  margin-top: 2rem;
   text-align: center;
 }
 

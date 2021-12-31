@@ -28,7 +28,6 @@ function App() {
             <StarTransformers />
             <ToFindOut />
             <VideoFooter />
-            <Footer />
           </Route>
 
           <Route exact path="/OptimusPrime" component={PagePrimeBio} />
@@ -38,6 +37,7 @@ function App() {
             <Link to="/">Volver al inicio</Link>
           </Route>
         </Switch>
+        <Footer />
       </HashRouter>
     </>
   );
