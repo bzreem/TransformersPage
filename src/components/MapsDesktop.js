@@ -22,14 +22,6 @@ const MapsDesktop = ({ MapsBg }) => {
         </figure>
 
         <article className="position-article-absolute">
-          {/* <h3>DISTINTOS MÁPAS QUE</h3>
-          <h2>PROBAR</h2>
-          <button>VER AHORA</button> */}
-          {/* <div className="container-video-maps">
-            <figure className="figure-border-maps">
-              <video muted autoPlay loop preload="auto" src={Videoo}></video>
-            </figure>
-          </div> */}
           <div className="container-flex-desktop">
             <div className="div-container-title-desktop">
               <h3>DISTINTOS MÁPAS QUE</h3>
@@ -43,7 +35,7 @@ const MapsDesktop = ({ MapsBg }) => {
                   muted
                   loop
                   autoPlay
-                  preload = "metadata"
+                  preload="metadata"
                   className="active-video-maps"
                   src={Videoo}
                 ></video>

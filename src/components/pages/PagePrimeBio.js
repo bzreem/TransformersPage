@@ -1,21 +1,30 @@
 import { useEffect } from "react";
-import "./PagePrimeBio.css";
-import RowDown from "../../assets/logos/rowDown.png"
+import "./PageBioStyles.css";
+import Prime from "../../assets/optimusPrime/prime23-min.jpg";
+import RowDown from "../../assets/logos/rowDown.png";
 const PagePrimeBio = () => {
+  let styles = {
+    backgroundImage: `url(${Prime})`,
+  };
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
     const $containerImg = document.querySelector(".container-img-bio");
     const $articleTitle = document.querySelector(".article-title");
     const $sectionBio = document.querySelector(".section-bio");
+    const $themeAndInformation = document.querySelector(
+      ".theme-and-information"
+    );
     const scrollVisibility = () => {
       if ($containerImg.getBoundingClientRect().y < 0) {
         $containerImg.classList.add("scroll-active");
         $articleTitle.classList.add("active-slide");
         $sectionBio.classList.add("active-section-bio");
+        $themeAndInformation.classList.add("information-scroll-active");
       } else {
         $containerImg.classList.remove("scroll-active");
         $articleTitle.classList.remove("active-slide");
         $sectionBio.classList.remove("active-section-bio");
+        $themeAndInformation.classList.remove("information-scroll-active");
       }
     };
     window.addEventListener("scroll", scrollVisibility);
@@ -26,7 +35,11 @@ const PagePrimeBio = () => {
   });
   return (
     <section className="container-section-bio">
-      <div className="container-img-bio">
+      <div className="theme-and-information">
+        <h2>OPTIMUS PRIME</h2>
+        <h3>LIDER AUTOBOT</h3>
+      </div>
+      <div style={styles} className="container-img-bio">
         <article className="article-title">
           <h1>OPTIMUS PRIME</h1>
           <h2>LIDER AUTOBOT</h2>
@@ -35,7 +48,7 @@ const PagePrimeBio = () => {
         <div className="div-instruction">
           <p>DESPLÁZATE PARA COMENZAR</p>
           <figure>
-            <img src= {RowDown} alt=""/>
+            <img src={RowDown} alt="" />
           </figure>
         </div>
       </div>

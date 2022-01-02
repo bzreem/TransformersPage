@@ -14,8 +14,10 @@ const VideoPresentationDesktop = () => {
     $videoTwo.muted = true;
     let videoOne = $videoOne.play();
     let videoTwo = $videoTwo.play();
+    let controller = new AbortController();
+    let signal = controller.signal;
 
-    Promise.all([videoOne, videoTwo])
+    Promise.all([videoOne, videoTwo], { signal })
       .then(() => {
         if (videoOne !== undefined && videoTwo !== undefined) {
           $videoOne.play();
@@ -29,6 +31,8 @@ const VideoPresentationDesktop = () => {
       .catch((e) => {
         console.log(e);
       });
+
+    return () => controller.abort();
   }, []);
   return (
     <div className="div-container-desktop">

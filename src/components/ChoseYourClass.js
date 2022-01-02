@@ -10,7 +10,7 @@ import ChoseYourClassMobile from "./ChoseYourClassMobile";
 const ChoseYourClass = () => {
   const [mq, WindowRisezeHash, DomLoadedHash, hashChangeWindow] =
     useResizeWindow("(min-width: 1024px)");
-    let [classVisibility, setClassVisibilite] = useState(null);
+  let [classVisibility, setClassVisibilite] = useState(null);
   let [pj, handleChange] = usePjClass({
     name: "OPTIMUS PRIME",
     info: "Lider de los Autobots",
@@ -49,19 +49,32 @@ const ChoseYourClass = () => {
     return () => {};
   }, [pj]);
 
+  let controller = new AbortController();
+  let signal = controller.signal;
   useEffect(() => {
     if (mq === null) return;
-    if(mq){
-      setClassVisibilite(<ChoseYourClassDesktop handleChange={handleChange} pj={pj} bg={bg} />)
-    }else{
-      setClassVisibilite(  <ChoseYourClassMobile handleChange={handleChange} pj={pj} bg={bg} />)
-    }
+    const ChoseYourClassFunctionMq = async () => {
+      if (mq) {
+        setClassVisibilite(
+          <ChoseYourClassDesktop handleChange={handleChange} pj={pj} bg={bg} />
+        );
+      } else {
+        setClassVisibilite(
+          <ChoseYourClassMobile handleChange={handleChange} pj={pj} bg={bg} />
+        );
+      }
+    };
+
+    Promise.all([ChoseYourClassMobile], { signal }).then(() =>
+      ChoseYourClassFunctionMq()
+    );
 
     return () => {
+      controller.abort();
       window.removeEventListener("resize", WindowRisezeHash);
       document.removeEventListener("DOMContentLoaded", DomLoadedHash);
       window.removeEventListener("hashchange", hashChangeWindow);
-      setClassVisibilite(null)
+      setClassVisibilite(null);
     };
   }, [mq]);
 

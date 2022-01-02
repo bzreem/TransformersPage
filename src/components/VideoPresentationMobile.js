@@ -4,32 +4,40 @@ import "./VideoPresentationMobile.css";
 import { useEffect } from "react";
 import { canvasHelper } from "./helpers/canvasHelper";
 const VideoPresentationMobile = () => {
-
-  useEffect(()=>{
+  useEffect(() => {
     canvasHelper(".canvas-header-btn", "0.5rem", "white", 30, 0, 30, 0);
     const $videoMobile = document.getElementById("video-presentation-mobile");
     let videoMobile = $videoMobile.play();
-    videoMobile.then(() => {
+    let controller = new AbortController();
+    let signal = controller.signal;
+    Promise.all([videoMobile], { signal }).then(() => {
       if (videoMobile !== undefined) {
         $videoMobile.play();
         $videoMobile.loop = true;
       }
     });
-  },[])
+
+    return () => controller.abort();
+  }, []);
   return (
-    <div className = "div-container-mobile">
+    <div className="div-container-mobile">
       <figure>
-        <video preload="metadata" id= "video-presentation-mobile" muted src={video}></video>
+        <video
+          preload="metadata"
+          id="video-presentation-mobile"
+          muted
+          src={video}
+        ></video>
       </figure>
       <section className="section-video-flex-mobile">
         <figure>
-          <img src={title} alt="Transformers Title" />     
+          <img src={title} alt="Transformers Title" />
         </figure>
         <div className="div-border-btn-canvas">
-        <button className="more-information">MÁS INFORMACIÓN</button>
-        <div className="div-container-canvas-header">
-          <canvas className="canvas-header-btn"></canvas>
-        </div>
+          <button className="more-information">MÁS INFORMACIÓN</button>
+          <div className="div-container-canvas-header">
+            <canvas className="canvas-header-btn"></canvas>
+          </div>
         </div>
       </section>
     </div>

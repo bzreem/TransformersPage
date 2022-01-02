@@ -8,11 +8,13 @@ import { TransitionImages } from "../hooks/TransitionImages";
 import { useEffect } from "react";
 const PjPersonalitation = () => {
   useEffect(() => {
-    TransitionImages(
+    let intervalClean = TransitionImages(
       document.querySelectorAll(".container-position-absolute figure img"),
       "img-active-personification"
     );
-    return () => {};
+    return () => {
+      clearInterval(intervalClean);
+    };
   }, []);
   return (
     <>
