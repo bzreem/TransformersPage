@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TransformersPage/static/css/main.33564f81.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.6a79c96c.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.6a79c96c.chunk.js.map",
+    "main.js": "/TransformersPage/static/js/main.d27701fa.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.d27701fa.chunk.js.map",
     "runtime-main.js": "/TransformersPage/static/js/runtime-main.584acf36.js",
     "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.584acf36.js.map",
     "static/js/2.01eaf7d3.chunk.js": "/TransformersPage/static/js/2.01eaf7d3.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/5.07e94513.png": "/TransformersPage/static/media/5.07e94513.png",
     "static/media/AutoBg.ff2f39a8.png": "/TransformersPage/static/media/AutoBg.ff2f39a8.png",
     "static/media/BeeMovie.62643dea.jpg": "/TransformersPage/static/media/BeeMovie.62643dea.jpg",
-    "static/media/BeeMovieEdit2.c6669a94.mp4": "/TransformersPage/static/media/BeeMovieEdit2.c6669a94.mp4",
+    "static/media/BeeMovieEdit2_1.52872ca1.mp4": "/TransformersPage/static/media/BeeMovieEdit2_1.52872ca1.mp4",
     "static/media/BeeMovie_6002.85ec4122.jpg": "/TransformersPage/static/media/BeeMovie_6002.85ec4122.jpg",
     "static/media/BeeMovie_900.82a1f0b1.jpg": "/TransformersPage/static/media/BeeMovie_900.82a1f0b1.jpg",
     "static/media/BeePrueba.f6a7957d.png": "/TransformersPage/static/media/BeePrueba.f6a7957d.png",
@@ -61,14 +61,14 @@
     "static/media/prime23-min.6186b408.jpg": "/TransformersPage/static/media/prime23-min.6186b408.jpg",
     "static/media/prueba2.775858af.png": "/TransformersPage/static/media/prueba2.775858af.png",
     "static/media/starscreamBg_Comprim.b52982ef.png": "/TransformersPage/static/media/starscreamBg_Comprim.b52982ef.png",
-    "static/media/transformersSiege1.1bc6de11.jpg": "/TransformersPage/static/media/transformersSiege1.1bc6de11.jpg",
-    "static/media/transformersSiege2.4a1ce422.jpg": "/TransformersPage/static/media/transformersSiege2.4a1ce422.jpg",
+    "static/media/transformersSiege1.69b60ce0.jpg": "/TransformersPage/static/media/transformersSiege1.69b60ce0.jpg",
+    "static/media/transformersSiege2.93fe6c40.jpg": "/TransformersPage/static/media/transformersSiege2.93fe6c40.jpg",
     "static/media/twitter.12c66524.png": "/TransformersPage/static/media/twitter.12c66524.png"
   },
   "entrypoints": [
     "static/js/runtime-main.584acf36.js",
     "static/js/2.01eaf7d3.chunk.js",
     "static/css/main.33564f81.chunk.css",
-    "static/js/main.6a79c96c.chunk.js"
+    "static/js/main.d27701fa.chunk.js"
   ]
 }
