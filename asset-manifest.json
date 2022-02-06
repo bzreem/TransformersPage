@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TransformersPage/static/css/main.33564f81.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.764ffb41.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.764ffb41.chunk.js.map",
+    "main.js": "/TransformersPage/static/js/main.6a79c96c.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.6a79c96c.chunk.js.map",
     "runtime-main.js": "/TransformersPage/static/js/runtime-main.584acf36.js",
     "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.584acf36.js.map",
     "static/js/2.01eaf7d3.chunk.js": "/TransformersPage/static/js/2.01eaf7d3.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/5.07e94513.png": "/TransformersPage/static/media/5.07e94513.png",
     "static/media/AutoBg.ff2f39a8.png": "/TransformersPage/static/media/AutoBg.ff2f39a8.png",
     "static/media/BeeMovie.62643dea.jpg": "/TransformersPage/static/media/BeeMovie.62643dea.jpg",
-    "static/media/BeeMovieEdit2.f15cd5e2.mp4": "/TransformersPage/static/media/BeeMovieEdit2.f15cd5e2.mp4",
+    "static/media/BeeMovieEdit2.c6669a94.mp4": "/TransformersPage/static/media/BeeMovieEdit2.c6669a94.mp4",
     "static/media/BeeMovie_6002.85ec4122.jpg": "/TransformersPage/static/media/BeeMovie_6002.85ec4122.jpg",
     "static/media/BeeMovie_900.82a1f0b1.jpg": "/TransformersPage/static/media/BeeMovie_900.82a1f0b1.jpg",
     "static/media/BeePrueba.f6a7957d.png": "/TransformersPage/static/media/BeePrueba.f6a7957d.png",
@@ -44,12 +44,11 @@
     "static/media/Soundwave.0dcbb8aa.png": "/TransformersPage/static/media/Soundwave.0dcbb8aa.png",
     "static/media/Soundwave_Comprim.e63b93b2.png": "/TransformersPage/static/media/Soundwave_Comprim.e63b93b2.png",
     "static/media/Tanque2_Comprim.97f2b80e.mp4": "/TransformersPage/static/media/Tanque2_Comprim.97f2b80e.mp4",
-    "static/media/TransformersPresentacion_1Comprim.8db3ca15.mp4": "/TransformersPage/static/media/TransformersPresentacion_1Comprim.8db3ca15.mp4",
-    "static/media/TransformersPresentacion_2.3177dc9a.mp4": "/TransformersPage/static/media/TransformersPresentacion_2.3177dc9a.mp4",
+    "static/media/TransformersPresentacion2_1.06051125.mp4": "/TransformersPage/static/media/TransformersPresentacion2_1.06051125.mp4",
     "static/media/TransformersTitulo2.fd9399a7.png": "/TransformersPage/static/media/TransformersTitulo2.fd9399a7.png",
     "static/media/TransformersTitulo3.5121669d.png": "/TransformersPage/static/media/TransformersTitulo3.5121669d.png",
-    "static/media/TransformersVideo1_Trim_Comprim.fd2cba9e.mp4": "/TransformersPage/static/media/TransformersVideo1_Trim_Comprim.fd2cba9e.mp4",
-    "static/media/TransformersVideo2_Trim_1_Comprim.be542040.mp4": "/TransformersPage/static/media/TransformersVideo2_Trim_1_Comprim.be542040.mp4",
+    "static/media/TransformersVideo1Edit_1.d145ccf7.mp4": "/TransformersPage/static/media/TransformersVideo1Edit_1.d145ccf7.mp4",
+    "static/media/TransformersVideo2Edit_1.85641ef2.mp4": "/TransformersPage/static/media/TransformersVideo2Edit_1.85641ef2.mp4",
     "static/media/bg-star2.e2d8cf92.jpg": "/TransformersPage/static/media/bg-star2.e2d8cf92.jpg",
     "static/media/github.8fe4e9fd.png": "/TransformersPage/static/media/github.8fe4e9fd.png",
     "static/media/linkedin.cbe5b668.png": "/TransformersPage/static/media/linkedin.cbe5b668.png",
@@ -70,6 +69,6 @@
     "static/js/runtime-main.584acf36.js",
     "static/js/2.01eaf7d3.chunk.js",
     "static/css/main.33564f81.chunk.css",
-    "static/js/main.764ffb41.chunk.js"
+    "static/js/main.6a79c96c.chunk.js"
   ]
 }
