@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TransformersPage/static/css/main.33564f81.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.d27701fa.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.d27701fa.chunk.js.map",
-    "runtime-main.js": "/TransformersPage/static/js/runtime-main.584acf36.js",
-    "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.584acf36.js.map",
+    "main.css": "/TransformersPage/static/css/main.2a9bd638.chunk.css",
+    "main.js": "/TransformersPage/static/js/main.9f48dbc7.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.9f48dbc7.chunk.js.map",
+    "runtime-main.js": "/TransformersPage/static/js/runtime-main.e6bb3d5a.js",
+    "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.e6bb3d5a.js.map",
     "static/js/2.01eaf7d3.chunk.js": "/TransformersPage/static/js/2.01eaf7d3.chunk.js",
     "static/js/2.01eaf7d3.chunk.js.map": "/TransformersPage/static/js/2.01eaf7d3.chunk.js.map",
-    "static/js/3.46c9ea66.chunk.js": "/TransformersPage/static/js/3.46c9ea66.chunk.js",
-    "static/js/3.46c9ea66.chunk.js.map": "/TransformersPage/static/js/3.46c9ea66.chunk.js.map",
+    "static/js/3.ac6c93b4.chunk.js": "/TransformersPage/static/js/3.ac6c93b4.chunk.js",
+    "static/js/3.ac6c93b4.chunk.js.map": "/TransformersPage/static/js/3.ac6c93b4.chunk.js.map",
     "index.html": "/TransformersPage/index.html",
-    "static/css/main.33564f81.chunk.css.map": "/TransformersPage/static/css/main.33564f81.chunk.css.map",
+    "static/css/main.2a9bd638.chunk.css.map": "/TransformersPage/static/css/main.2a9bd638.chunk.css.map",
     "static/js/2.01eaf7d3.chunk.js.LICENSE.txt": "/TransformersPage/static/js/2.01eaf7d3.chunk.js.LICENSE.txt",
     "static/media/1.07b7a3af.png": "/TransformersPage/static/media/1.07b7a3af.png",
     "static/media/2.1afc10f8.png": "/TransformersPage/static/media/2.1afc10f8.png",
@@ -66,9 +66,9 @@
     "static/media/twitter.12c66524.png": "/TransformersPage/static/media/twitter.12c66524.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.584acf36.js",
+    "static/js/runtime-main.e6bb3d5a.js",
     "static/js/2.01eaf7d3.chunk.js",
-    "static/css/main.33564f81.chunk.css",
-    "static/js/main.d27701fa.chunk.js"
+    "static/css/main.2a9bd638.chunk.css",
+    "static/js/main.9f48dbc7.chunk.js"
   ]
 }
