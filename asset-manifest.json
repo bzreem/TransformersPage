@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TransformersPage/static/css/main.a4de114a.chunk.css",
-    "main.js": "/TransformersPage/static/js/main.4ed48df4.chunk.js",
-    "main.js.map": "/TransformersPage/static/js/main.4ed48df4.chunk.js.map",
+    "main.js": "/TransformersPage/static/js/main.80b4958b.chunk.js",
+    "main.js.map": "/TransformersPage/static/js/main.80b4958b.chunk.js.map",
     "runtime-main.js": "/TransformersPage/static/js/runtime-main.e6bb3d5a.js",
     "runtime-main.js.map": "/TransformersPage/static/js/runtime-main.e6bb3d5a.js.map",
     "static/js/2.01eaf7d3.chunk.js": "/TransformersPage/static/js/2.01eaf7d3.chunk.js",
@@ -69,6 +69,6 @@
     "static/js/runtime-main.e6bb3d5a.js",
     "static/js/2.01eaf7d3.chunk.js",
     "static/css/main.a4de114a.chunk.css",
-    "static/js/main.4ed48df4.chunk.js"
+    "static/js/main.80b4958b.chunk.js"
   ]
 }
